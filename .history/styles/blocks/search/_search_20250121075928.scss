@@ -1,0 +1,25 @@
+.yandex-search,
+.search-in-site {
+    border: 2px solid #cacaca;
+    padding: 6px 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 4px;
+    outline: none;
+    letter-spacing: -1px;
+}
+
+.yandex-search-button {
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #555;
+}
+
+.search-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
