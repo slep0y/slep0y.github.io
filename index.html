@@ -1,23 +1,13 @@
+<!-- КОД НИЖЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-	<title>GitHUB stanislaff</title>
-</head>
+<head data-include="components/head.html"></head>
 
 <body class="page">
-	<header class="header">
-		<nav class="menu">
-			<ul>
-				<li>Главная</li>
-				<li>***</li>
-				<li>***</li>
-			</ul>
-		</nav>
-	</header>
+	<header class="header" data-include="components/header.html"></header>
+
+	<!-- КОД ВЫШЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->
 
 	<main class="main">
 		<section class="search">
@@ -33,6 +23,8 @@
 
 	<footer class="footer"></footer>
 
+
+	<script src="js/add-components.js"></script>
 	<script src="js/search.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -1,10 +1,24 @@
+:root{
+    --segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --opensans: 'Open Sans';
+}
 *, *::after, *::before{
     box-sizing: border-box;
 }
 html, body{
     padding: 0;
     margin: 0;
+    font-family: var(--opensans);
 }
 button{
     cursor: pointer;
+}
+ul[class]{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a[class]{
+    color: inherit;
+    text-decoration: none;
 }

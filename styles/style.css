@@ -1,3 +1,8 @@
+:root {
+  --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --opensans: "Open Sans";
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -5,14 +10,39 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-family: var(--opensans);
 }
 
 button {
   cursor: pointer;
 }
 
+ul[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a[class] {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
 .header {
   padding-block: 1.5rem;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .yandex-search,
