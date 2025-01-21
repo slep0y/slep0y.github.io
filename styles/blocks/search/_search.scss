@@ -1,21 +1,14 @@
 .yandex-search,
 .search-in-site {
-    border: 2px solid #cacaca;
+    border: 2px solid var(--grey-50);
     padding: 6px 10px;
-    color: #333;
-    font-weight: 600;
-    font-size: 18px;
+    color: var(--grey-50);
+    font-weight: 100;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     outline: none;
     letter-spacing: -1px;
-}
-
-.yandex-search-button {
-    display: inline-block;
-    border-radius: 4px;
-    font-weight: 700;
-    color: #555;
+    background-color: var(--white);
 }
 
 .search-block {

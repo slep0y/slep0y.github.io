@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head data-include="components/head.html"></head>
+<head data-include="/components/head.html"></head>
+<script src="/js/add-components.js"></script>
 
 <body class="page">
-	<header class="header" data-include="components/header.html"></header>
+	<header class="header" data-include="/components/header.html"></header>
 
-	<!-- КОД ВЫШЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->
+	<!-- HEADER ======= КОД ВЫШЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->
 
 	<main class="main">
 		<section class="search">
@@ -15,18 +16,17 @@
 				<div class="search-block">
 					<input type="text" class="yandex-search" id="yandexSearch" placeholder="Яндекс.Поиск">
 					<input type="text" class="search-in-site" id="urlOfSite" placeholder="URL сайта">
-					<button class="yandex-search-button">Искать</button>
+					<button class="button yandex-search-button">Искать</button>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="footer"></footer>
-
-
-	<script src="js/add-components.js"></script>
-	<script src="js/search.js"></script>
-	<script src="js/main.js"></script>
+	<!-- FOOTER ========== КОД НИЖЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->
+	<footer class="footer" data-include="/components/footer.html"></footer>
+	<script src="/js/add-components.js"></script>
+	<script src="/js/search.js"></script>
+	<script src="/js/main.js"></script>
 </body>
-
 </html>
+<!-- КОД ВЫШЕ КОПИРУЕМ НА ВСЕ СТРАНИЦЫ -->

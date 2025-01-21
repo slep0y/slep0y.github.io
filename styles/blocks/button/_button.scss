@@ -1,0 +1,18 @@
+.button{
+    background-color: transparent;
+    border: 2px solid var(--grey);
+    color: var(--grey);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.3em 0.6em;
+    transition: var(--transition);
+    &:hover{
+        background-color: var(--grey-50);
+        color: var(--lite);
+    }
+}

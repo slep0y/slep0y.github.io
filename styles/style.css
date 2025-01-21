@@ -1,6 +1,14 @@
 :root {
   --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --opensans: "Open Sans";
+  --grey: #787878;
+  --grey-50: #78787878;
+  --dark: #000710;
+  --dark-50: #00071078;
+  --lite: #fcfeff;
+  --white: #ffffff;
+  --black: #000000;
+  --transition: 300ms;
 }
 
 *, *::after, *::before {
@@ -11,6 +19,13 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: var(--opensans);
+  height: 100%;
+  color: var(--dark);
+  background-color: var(--lite);
+}
+
+section {
+  padding-block: 2rem;
 }
 
 button {
@@ -28,6 +43,11 @@ a[class] {
   text-decoration: none;
 }
 
+.page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -37,6 +57,12 @@ a[class] {
 
 .header {
   padding-block: 1.5rem;
+  box-shadow: 0 1px 2px var(--grey-50);
+}
+
+.footer {
+  padding-block: 1.5rem;
+  box-shadow: 0 -1px 2px var(--grey-50);
 }
 
 .menu__list {
@@ -47,26 +73,38 @@ a[class] {
 
 .yandex-search,
 .search-in-site {
-  border: 2px solid #cacaca;
+  border: 2px solid var(--grey-50);
   padding: 6px 10px;
-  color: #333;
-  font-weight: 600;
-  font-size: 18px;
+  color: var(--grey-50);
+  font-weight: 100;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   outline: none;
   letter-spacing: -1px;
-}
-
-.yandex-search-button {
-  display: inline-block;
-  border-radius: 4px;
-  font-weight: 700;
-  color: #555;
+  background-color: var(--white);
 }
 
 .search-block {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid var(--grey);
+  color: var(--grey);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.3em 0.6em;
+  transition: var(--transition);
+}
+.button:hover {
+  background-color: var(--grey-50);
+  color: var(--lite);
 }
