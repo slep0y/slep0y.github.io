@@ -18,6 +18,7 @@ html, body{
     padding: 0;
     margin: 0;
     font-family: var(--opensans);
+    font-weight: 200;
     height: 100%;
     color: var(--dark);
     background-color: var(--lite);
@@ -36,4 +37,24 @@ ul[class]{
 a[class]{
     color: inherit;
     text-decoration: none;
+}
+p[class]{
+    margin: 0;
+    & + p[class]{
+        margin-top: 1em;
+    }
+}
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class]{
+    margin: 0;
+    &:has( + p),
+    &:has( + ul),
+    &:has( + ol),
+    &:has( + .title){
+        margin-bottom: 0.5em;
+    }
 }

@@ -1,0 +1,9 @@
+.card{
+    border: 1px solid var(--grey-50);
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    &__header{
+        margin-bottom: 1rem;
+    }
+}
