@@ -1,6 +1,7 @@
 :root {
   --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --opensans: "Open Sans";
+  --montserrat: "Montserrat";
   --grey: #787878;
   --grey-50: #78787878;
   --dark: #000710;
@@ -8,7 +9,7 @@
   --lite: #fcfeff;
   --white: #ffffff;
   --black: #000000;
-  --transition: 300ms;
+  --transition: 1000ms;
 }
 
 *, *::after, *::before {
@@ -46,6 +47,7 @@ a[class] {
 .page {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  transition: opacity var(--transition);
 }
 
 .container {
@@ -65,10 +67,20 @@ a[class] {
   box-shadow: 0 -1px 2px var(--grey-50);
 }
 
+.menu {
+  font-size: 14px;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .menu__list {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.title {
+  font-family: var(--montserrat);
 }
 
 .yandex-search,

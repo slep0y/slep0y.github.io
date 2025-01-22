@@ -1,4 +1,8 @@
 .menu{
+    font-size: 14px;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-weight: 600;
     &__list{
         display: flex;
         align-items: center;
