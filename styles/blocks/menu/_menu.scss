@@ -8,4 +8,10 @@
         align-items: center;
         gap: 16px;
     }
+    &__link{
+        transition: calc(var(--transition) / 2);
+        &:hover{
+            color: #3366FF;
+        }
+    }
 }

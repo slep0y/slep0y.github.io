@@ -2,6 +2,7 @@
   --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --opensans: "Open Sans";
   --montserrat: "Montserrat";
+  --blue: #3366CC;
   --grey: #787878;
   --grey-50: #78787878;
   --dark: #000710;
@@ -9,7 +10,7 @@
   --lite: #fcfeff;
   --white: #ffffff;
   --black: #000000;
-  --transition: 1000ms;
+  --transition: 300ms;
 }
 
 *, *::after, *::before {
@@ -118,6 +119,12 @@ h6[class]:has(+ .title) {
   align-items: center;
   gap: 16px;
 }
+.menu__link {
+  transition: calc(var(--transition) / 2);
+}
+.menu__link:hover {
+  color: #3366FF;
+}
 
 .card {
   border: 1px solid var(--grey-50);
@@ -145,7 +152,7 @@ h6[class]:has(+ .title) {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
-  max-height: 250px;
+  max-height: 220px;
   align-content: flex-start;
 }
 .teasers__teaser {
