@@ -6,8 +6,6 @@ if(document.querySelector('.screenshot-block')){
     let urlOfSiteToScreen = document.querySelector('#urlOfSiteToScreen');
     let screenshotButton = document.querySelector('.screenshot-button');
 
-    console.log(screenWidth.value!=''?screenWidth.value:'1024', screenShotFileWidth.value!=''?screenShotFileWidth.value:'600', fileFormat.value, urlOfSiteToScreen.value);
-
     screenshotButton.onclick = getScreenOnButtonClick;
 
     function getScreenOnButtonClick(){

@@ -236,6 +236,90 @@ a.link_inline {
   color: var(--blue);
 }
 
+.app {
+  display: grid;
+  gap: 32px;
+}
+
+.task {
+  display: grid;
+  gap: 8px;
+}
+.task__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.task__controls {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+.task__progress {
+  width: 100%;
+  border-radius: 0;
+  height: 24px;
+}
+.task__progress::-webkit-progress-bar {
+  background-color: #ccc;
+}
+.task__progress::-webkit-progress-value {
+  background-color: #59f;
+}
+.task__progress.active {
+  animation: progressActive 2000ms ease-in-out infinite;
+}
+.task__progress.active::-webkit-progress-value {
+  background-color: #5c9;
+}
+.task__title {
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+}
+.task__title:focus-visible {
+  outline: none;
+}
+.task__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 24px;
+  width: 24px;
+  flex: 0 0 24px;
+  border: 1px solid #333;
+  border-radius: 100%;
+  font-weight: 600;
+  color: #fff;
+  line-height: 0.5;
+  font-size: 15px;
+}
+.task__past-time {
+  flex: 0 0 70px;
+  text-align: right;
+  border: 1px solid #bcbcbc;
+  padding-inline: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #eeeeee;
+  line-height: 1.2;
+}
+
+@keyframes progressActive {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 .search-block {
   display: flex;
   justify-content: center;
@@ -269,4 +353,29 @@ a.link_inline {
 .button:hover {
   background-color: var(--grey-50);
   color: var(--lite);
+}
+.button_task-control {
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  display: inline-flex;
+  gap: 8px;
+}
+.button img {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  display: block;
+}
+.button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button[data-role=taskStart] {
+  background: rgba(85, 204, 153, 0.2);
+}
+.button[data-role=taskEnd] {
+  background: rgba(51, 153, 204, 0.2);
+}
+.button[data-role=taskReset] {
+  background: rgba(187, 85, 85, 0.2);
 }

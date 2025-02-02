@@ -15,4 +15,29 @@
         background-color: var(--grey-50);
         color: var(--lite);
     }
+    &_task-control{
+        padding: 0.2em 0.5em;
+        border-radius: 4px;
+        display: inline-flex;
+        gap: 8px;
+    }
+    img{
+        width: 16px;
+        height: 16px;
+        flex: 0 0 16px;
+        display: block;
+    }
+    &.disabled{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &[data-role=taskStart]{
+        background: #55cc9933;
+    }
+    &[data-role=taskEnd]{
+        background: #3399cc33;
+    }
+    &[data-role=taskReset]{
+        background: #bb555533;
+    }
 }
