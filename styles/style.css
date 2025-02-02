@@ -143,6 +143,13 @@ h6[class]:has(+ .title) {
 .title__link {
   text-decoration: none;
 }
+.title_center {
+  text-align: center;
+}
+
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+  margin-bottom: var(--mb, 0.6em);
+}
 
 .text_meta {
   font-size: 0.8em;
@@ -209,13 +216,16 @@ p.text {
 .input {
   border: 2px solid var(--grey-50);
   padding: 6px 10px;
-  color: var(--grey-50);
+  color: var(--grey);
   font-weight: 100;
   display: inline-block;
   border-radius: 0.5rem;
   outline: none;
   letter-spacing: -1px;
   background-color: var(--white);
+}
+.input::placeholder {
+  color: var(--grey-50);
 }
 .input_select {
   min-width: 150px;

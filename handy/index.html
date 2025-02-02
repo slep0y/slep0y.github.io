@@ -40,23 +40,25 @@
 	<main class="main">
 		<section class="search">
 			<div class="container">
+				<h2 class="title title_h2 title_center">Поиск Яндекс по конкретному сайту</h2>
 				<div class="search-block">
-					<input type="text" class="input input_text yandex-search" id="yandexSearch" placeholder="Яндекс.Поиск">
-					<input type="text" class="input input_text search-in-site" id="urlOfSite" placeholder="URL сайта">
+					<input autocomplete="all-off" type="text" class="input input_text yandex-search" id="yandexSearch" placeholder="Яндекс.Поиск">
+					<input autocomplete="all-off" type="text" class="input input_text search-in-site" id="urlOfSite" placeholder="URL сайта">
 					<button class="button yandex-search-button">Искать</button>
 				</div>
 			</div>
 		</section>
 		<section class="screenshot">
 			<div class="container">
+				<h2 class="title title_h2 title_center">Получение скриншота сайта с разными разрешениями</h2>
 				<div class="screenshot-block">
-					<input type="number" class="input input_number" id="screenWidth" value="" placeholder="1024 (px) - разрешение экрана" min="320" max="3600">
-					<input type="number" class="input input_number" id="screenShotFileWidth" value="" placeholder="600 (px) - ширина файла" min="200" max="3600">
+					<input autocomplete="all-off" type="number" class="input input_number" id="screenWidth" value="" placeholder="1024 (px) - разрешение экрана" min="320" max="3600">
+					<input autocomplete="all-off" type="number" class="input input_number" id="screenShotFileWidth" value="" placeholder="600 (px) - ширина файла" min="200" max="3600">
 					<select name="" class="input input_select" id="fileFormat">
 						<option value="jpeg">JPEG</option>
 						<option value="png">PNG</option>
 					</select>
-					<input type="text" class="input input_text screen-of-site" id="urlOfSiteToScreen" placeholder="URL сайта">
+					<input autocomplete="all-off" type="text" class="input input_text screen-of-site" id="urlOfSiteToScreen" placeholder="URL сайта">
 					<button class="button screenshot-button">Сделать скриншот</button>
 				</div>
 				<p class="text text_meta text_center">Документация по сервису <strong>s-shot</strong>: <a href="https://www.s-shot.ru/doc/" class="link link_inline">https://www.s-shot.ru/doc/</a></p>
