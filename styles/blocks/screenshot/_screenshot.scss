@@ -1,0 +1,8 @@
+.screenshot-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#screenWidth, #screenShotFileWidth{
+    min-width: 200px;
+}

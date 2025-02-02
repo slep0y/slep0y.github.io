@@ -144,6 +144,18 @@ h6[class]:has(+ .title) {
   text-decoration: none;
 }
 
+.text_meta {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+.text_center {
+  text-align: center;
+}
+
+p.text {
+  margin-top: var(--mt, 1em);
+}
+
 .teasers {
   width: 50%;
 }
@@ -194,8 +206,7 @@ h6[class]:has(+ .title) {
   font-weight: 400;
 }
 
-.yandex-search,
-.search-in-site {
+.input {
   border: 2px solid var(--grey-50);
   padding: 6px 10px;
   color: var(--grey-50);
@@ -206,11 +217,29 @@ h6[class]:has(+ .title) {
   letter-spacing: -1px;
   background-color: var(--white);
 }
+.input_select {
+  min-width: 150px;
+}
+
+a.link_inline {
+  text-decoration: underline;
+  color: var(--blue);
+}
 
 .search-block {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.screenshot-block {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#screenWidth, #screenShotFileWidth {
+  min-width: 200px;
 }
 
 .button {

@@ -39,7 +39,6 @@
 
 	<main class="main">
 
-<?= 'DEEP TREEP' ?>
 
 
     </main>

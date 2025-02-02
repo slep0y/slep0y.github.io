@@ -1,0 +1,12 @@
+.text{
+    &_meta{
+        font-size: 0.8em;
+        opacity: 0.8;
+    }
+    &_center{
+        text-align: center;
+    }
+}
+p.text{
+    margin-top: var(--mt, 1em);
+}

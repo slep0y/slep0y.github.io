@@ -1,3 +1,6 @@
-.link{
-
+a.link{
+    &_inline{
+        text-decoration: underline;
+        color: var(--blue);
+    }
 }
