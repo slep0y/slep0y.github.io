@@ -251,7 +251,7 @@ a.link_inline {
   gap: 8px;
 }
 .task__controls {
-  margin-left: auto;
+  margin-left: 32px;
   display: flex;
   gap: 4px;
 }
@@ -277,6 +277,8 @@ a.link_inline {
   font-size: 20px;
   font-weight: 500;
   outline: none;
+  width: 30%;
+  margin-right: auto;
 }
 .task__title:focus-visible {
   outline: none;
