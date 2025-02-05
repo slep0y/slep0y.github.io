@@ -33,6 +33,9 @@
         font-size: 0.8em;
         font-weight: 400;
     }
+    &__link{
+        display: block;
+    }
     &__link::after{
         position: absolute;
         content: '';
@@ -44,5 +47,12 @@
         font-size: 0.6em;
         text-transform: uppercase;
         font-weight: 400;
+        display: flex;
+        gap: 4px;
+        align-items: flex-end;
+    }
+    &__title-icon{
+        width: 14px;
+        height: 14px;
     }
 }
