@@ -2,7 +2,7 @@
   --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --opensans: "Open Sans";
   --montserrat: "Montserrat";
-  --blue: #3366CC;
+  --blue: 51 102 255;
   --grey: #787878;
   --grey-50: #78787878;
   --dark: #000710;
@@ -10,6 +10,7 @@
   --lite: #fcfeff;
   --white: #ffffff;
   --black: #000000;
+  --yellow: 255 204 0;
   --transition: 300ms;
 }
 
@@ -123,7 +124,7 @@ h6[class]:has(+ .title) {
   transition: calc(var(--transition) / 2);
 }
 .menu__link:hover {
-  color: #3366FF;
+  color: rgb(var(--blue));
 }
 
 .card {
@@ -187,12 +188,18 @@ p.text {
   content: "";
   inset: -0.4rem;
   display: block;
-  visibility: hidden;
   background-color: var(--grey-50);
+  visibility: hidden;
   border-radius: 0.3rem;
   opacity: 0;
   transition: calc(var(--transition) / 2);
   z-index: 0;
+}
+.teaser_blue::before {
+  background-color: rgba(var(--blue)/0.5);
+}
+.teaser_yellow::before {
+  background-color: rgba(var(--yellow)/0.5);
 }
 .teaser:hover::before {
   visibility: visible;

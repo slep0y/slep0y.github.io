@@ -20,12 +20,18 @@
         content: '';
         inset: -0.4rem;
         display: block;
-        visibility: hidden;
         background-color: var(--grey-50);
+        visibility: hidden;
         border-radius: 0.3rem;
         opacity: 0;
         transition: calc(var(--transition) / 2);
         z-index: 0;
+    }
+    &_blue::before{
+        background-color: rgba(var(--blue) / 0.5);
+    }
+    &_yellow::before{
+        background-color: rgba(var(--yellow) / 0.5);
     }
     &:hover::before{
         visibility: visible;
