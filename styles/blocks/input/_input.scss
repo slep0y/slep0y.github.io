@@ -1,15 +1,15 @@
 .input {
-    border: 2px solid var(--grey-50);
+    border: 2px solid var(--border);
     padding: 6px 10px;
-    color: var(--grey);
+    color: var(--text-muted);
     font-weight: 100;
     display: inline-block;
     border-radius: 0.5rem;
     outline: none;
     letter-spacing: -1px;
-    background-color: var(--white);
+    background-color: var(--input-bg);
     &::placeholder{
-        color: var(--grey-50);
+        color: var(--border);
     }
     &_select{
         min-width: 150px;

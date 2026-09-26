@@ -16,19 +16,21 @@
         border-radius: 0;
         height: 24px;
         &::-webkit-progress-bar {
-            background-color: #ccc;
+            background-color: var(--progress-bar-bg);
         }
         &::-webkit-progress-value {
-            background-color: #59f;
+            background-color: var(--progress-value-bg);
         }
         &.active{
             animation: progressActive 2000ms ease-in-out infinite;
             &::-webkit-progress-value {
-                background-color: #5c9;
+                background-color: var(--progress-active-bg);
             }
         }
     }
     &__title{
+        background-color: transparent;
+        color: inherit;
         border: none;
         font-size: 20px;
         font-weight: 500;
@@ -44,27 +46,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #333;
+        background-color: var(--task-number-bg);
         height: 24px;
         width: 24px;
         flex: 0 0 24px;
-        border: 1px solid #333;
+        border: 1px solid var(--task-number-bg);
         border-radius: 100%;
         font-weight: 600;
-        color: #fff;
+        color: var(--task-number-text);
         line-height: 0.5;
         font-size: 15px;
     }
     &__past-time{
         flex: 0 0 70px;
         text-align: right;
-        border: 1px solid #bcbcbc;
+        border: 1px solid var(--past-time-border);
         padding-inline: 4px;
         border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: end;
-        background-color: #eeeeee;
+        background-color: var(--past-time-bg);
         line-height: 1.2;
     }
 }
