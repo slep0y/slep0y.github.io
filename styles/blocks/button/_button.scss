@@ -1,7 +1,7 @@
 .button{
     background-color: transparent;
-    border: 2px solid var(--grey);
-    color: var(--grey);
+    border: 2px solid var(--text-muted);
+    color: var(--text-muted);
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -12,8 +12,8 @@
     padding: 0.3em 0.6em;
     transition: var(--transition);
     &:hover{
-        background-color: var(--grey-50);
-        color: var(--lite);
+        background-color: var(--border);
+        color: var(--bg);
     }
     &_task-control{
         padding: 0.2em 0.5em;

@@ -12,6 +12,70 @@
     --black: #000000;
     --yellow: 255 204 0;
     --transition: 300ms;
+
+    // семантические переменные темы (светлая по умолчанию)
+    --bg: var(--lite);
+    --surface: var(--white);
+    --text: var(--dark);
+    --text-muted: var(--grey);
+    --border: var(--grey-50);
+    --input-bg: var(--white);
+    --task-number-bg: #333333;
+    --task-number-text: #ffffff;
+    --past-time-bg: #eeeeee;
+    --past-time-border: #bcbcbc;
+    --progress-bar-bg: #cccccc;
+    --progress-value-bg: #5599ff;
+    --progress-active-bg: #55cc99;
+}
+// авто-переключение по системным настройкам
+@media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+        color-scheme: dark;
+        --bg: #0d1117;
+        --surface: #161b22;
+        --text: #e6edf3;
+        --text-muted: #9aa4b2;
+        --border: #9aa4b23d;
+        --input-bg: #0d1117;
+        --task-number-bg: #d0d7de;
+        --task-number-text: #0d1117;
+        --past-time-bg: #1c2128;
+        --past-time-border: #30363d;
+        --progress-bar-bg: #30363d;
+        --progress-value-bg: #58a6ff;
+        --progress-active-bg: #3fb950;
+    }
+}
+// принудительная темная тема (кнопка в шапке)
+:root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg: #0d1117;
+    --surface: #161b22;
+    --text: #e6edf3;
+    --text-muted: #9aa4b2;
+    --border: #9aa4b23d;
+    --input-bg: #0d1117;
+    --task-number-bg: #d0d7de;
+    --task-number-text: #0d1117;
+    --past-time-bg: #1c2128;
+    --past-time-border: #30363d;
+    --progress-bar-bg: #30363d;
+    --progress-value-bg: #58a6ff;
+    --progress-active-bg: #3fb950;
+}
+.theme-toggle{
+    background: transparent;
+    border: 2px solid var(--grey);
+    border-radius: 0.5rem;
+    padding: 0.2em 0.5em;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover{
+        background-color: var(--grey-50);
+    }
 }
 *, *::after, *::before{
     box-sizing: border-box;
@@ -22,8 +86,8 @@ html, body{
     font-family: var(--opensans);
     font-weight: 200;
     height: 100%;
-    color: var(--dark);
-    background-color: var(--lite);
+    color: var(--text);
+    background-color: var(--bg);
 }
 section{
     padding-block: 2rem;

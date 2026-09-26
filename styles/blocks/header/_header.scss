@@ -1,4 +1,12 @@
 .header{
     padding-block: 1.5rem;
-    box-shadow: 0 1px 2px var(--grey-50);
+    box-shadow: 0 1px 2px var(--border);
+    &__inner{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .theme-toggle{
+        margin-left: auto;
+    }
 }
